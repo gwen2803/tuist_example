@@ -25,12 +25,16 @@ tuist generate
 
 ```
 MyApp/
-├── Project.swift         # Tuist 프로젝트 설정 파일
-├── Tuist.swift          # Tuist 실행 파일
-├── mise.toml            # mise 설정 파일
-├── Sources/             # 앱 소스 파일
-├── Resources/           # 리소스 파일
-└── Tests/              # 테스트 코드
+├── Project.swift       # Tuist 프로젝트 설정 파일
+├── Tuist.swift         # Tuist 실행 파일
+├── mise.toml           # mise 설정 파일
+├── Targets
+│   └── MyApp
+│       ├── Sources     # 앱 소스 파일
+│       ├── Resources   # 리소스 파일
+│       └── Tests       # 테스트 코드
+└── Tuist
+    └── Package.swift   # Tuist 프로젝트 의존성 관리 파일
 ```
 
 ## 라이선스
