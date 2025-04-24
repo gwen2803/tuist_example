@@ -1,7 +1,7 @@
 import SwiftUI
 
 public struct TimeView: View {
-    @ObservedObject var viewModel = TimeViewModel()
+    @StateObject var viewModel = TimeViewModel()
     @Binding var showMenu: Bool
     
     public var body: some View {
