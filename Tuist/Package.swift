@@ -13,7 +13,7 @@ import PackageDescription
 #endif
 
 let package = Package(
-  name: "MyApp",
+  name: "MyAppWorkspace",
   dependencies: [
     .package(url: "https://github.com/nalexn/ViewInspector.git", from: "0.9.0")
   ]
