@@ -32,7 +32,9 @@ let project = Project(
       ),
       sources: ["Targets/MyApp/Sources/**"],
       resources: ["Targets/MyApp/Resources/**"],
-      dependencies: []
+      dependencies: [
+        .external(name: "ViewInspector")
+      ]
     ),
     .target(
       name: "MyAppTests",
@@ -42,7 +44,10 @@ let project = Project(
       infoPlist: .default,
       sources: ["Targets/MyAppTests/Sources/**"],
       resources: [],
-      dependencies: [.target(name: "MyApp")]
+      dependencies: [
+        .target(name: "MyApp"),
+        .external(name: "ViewInspector"),
+      ]
     ),
   ],
   schemes: [
